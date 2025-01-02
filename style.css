@@ -2,12 +2,13 @@
 {
     display:flex;
     flex-wrap:wrap;
+    height:50px
 
 
 }
 .square
 {
     flex: 1 0 20%;
-    height:100px;
+    aspect-ratio: 1;
     border: 1px solid black;
 }
