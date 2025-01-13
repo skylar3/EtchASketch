@@ -32,6 +32,8 @@ function createGrid(gridCount)
         });
         gridSquare.addEventListener("mouseout",()=>{
             gridSquare.style.background=`rgb(${getRandomInt(0,255)}, ${getRandomInt(0,255)},${getRandomInt(0,255)}`;
+            let tmp = window.getComputedStyle(gridSquare).getPropertyValue("opacity");
+            gridSquare.style.opacity = tmp - 0.1;
         });
         gridSquare.addEventListener("click",()=>{
             gridSquare.style.background="red";
