@@ -1,14 +1,32 @@
-#gridSquareContainer
-{
-    display:flex;
-    flex-wrap:wrap;
-    height:50px
 
-
-}
-.square
+.gridSquareContainer
 {
-    flex: 1 0 20%;
-    aspect-ratio: 1;
-    border: 1px solid black;
+  justify-content: center;  /* centers items inside container horizontally*/
+  align-items: center; /* Centers items inside container vertically*/
+  display:flex; /* Makes items in container a flex item*/
+  height:50vw; /* viewport width*/
+  gap:5rem; /* gap between flex items*/
+  padding:20px;
+  flex-wrap:wrap;
+  
+
+  
 }
+
+.child
+{
+  align-content:flex-start;
+  outline:solid pink 5px;
+  width:512px;
+  height:512px;
+  display: flex;
+  flex-wrap:wrap;
+  background:grey;
+}
+.gridSquare{
+  outline:solid white 1px;
+  
+  width:32px;
+  height:32px;
+}
+   

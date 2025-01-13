@@ -1,16 +1,17 @@
-const gridSquareContainer = document.querySelector("#gridSquareContainer");
+const gridSquareContainer = document.querySelector(".gridSquareContainer");
+const child = document.querySelector(".child")
 
-
-
-
-for (let i = 0; i <16; i++)
+for (let i =0; i< 256; i++)
 {
-        const square = document.createElement("div");
-        square.addEventListener("mouseover", () =>
-        {
-            square.style.backgroundColor = "blue";
-
-        });
-        square.classList.add("square");
-        gridSquareContainer.appendChild(square);
+    const gridSquare = document.createElement("div"); //creates the div 
+    gridSquare.classList.add("gridSquare"); //creates the class name
+    gridSquare.addEventListener("mouseover",()=>{
+        gridSquare.style.background="white";
+    });
+    gridSquare.addEventListener("mouseout",()=>{
+        gridSquare.style.background="blue";
+    });
+    
+    child.appendChild(gridSquare) //appends it to the container.
+    
 }
